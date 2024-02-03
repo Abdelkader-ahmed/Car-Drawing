@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+main{
+    background-color: #ed686b;
+    height: 100vh;
+    position: relative;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.circle{
+    width: 400px;
+    height: 400px;
+    background-color: #fdbaba91;
+    border-radius: 50%;
+    box-shadow:0 0 0 70px #fe8282, 0 0 0 140px #ff7578;
+    perspective: 200px;
+}
+.car{
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatey(240px);
+}
+.the_glass{
+    position: absolute;
+    width: 400px;
+    height: 280px;
+    border-radius: 5px;
+    background-color:#0c0c0c0e ;
+    box-shadow: inset 0 0 8px black, 0 0 0 2px white, 0 0 0 10px;
+transform: rotateX(14deg);}
+.The_mirror{
+    position: absolute;
+            width: 80px;
+            height: 20px;
+            background-color: black;
+            border-radius: 5px;
+            left: 50%;
+            transform: translate(-50%,100%);
+            box-shadow: 120px 78px 0 10px , -120px 78px 0 10px;
+}
+.The_mirror::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 6px;
+    background-color: #24211f;
+    top: -20px; left: 38px;
+}
+.The_mirror::after{
+    content: "";
+    position:absolute ;
+    width: 70px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid black;
+    top: 50px; left: 120px;
+    box-shadow: 105px 35px 0 -20px white,0 0 0 5px inset black;
+}
+.rectangular{
+    position: absolute;
+    width: 500px;
+    background-color: #ee5557;
+    height: 250px;
+      border-radius: 150px;
+ box-shadow:  -5px 0 0 0 white , 0 0 2px 7px ;
+  overflow: hidden; 
+}
+
+.searchlight{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow:0 0 0 4px black , 0 5px 0 0 rgba(0, 0, 0, 0.521) inset ;
+    transform: translate(30px, -150px);
+   -webkit-box-reflect: right 700%;
+   position: relative;
+}
+.Over-Border-Circle{
+position: absolute;
+width: 80px; height: 80px;
+background-color: transparent;
+border-radius: 55%;
+border:  5px solid black;
+transform: translate(-12px , -4px);
+}
+.Motor-covrer{
+    width: 80%;
+    height: 100%;
+    background-color: inherit;
+    transform: translate(50px, -140px);
+    border-radius: 80px;
+    box-shadow: 5px 0 0 0 black, -5px 0 0 0 black , 0  2px 0 0 white;
+}
+.Car_wheel{
+position: absolute;
+height: 150px;
+width: 80px;
+background-color: #24211f;
+border-radius: 20px;
+box-shadow: 0 -20px  0 0 #363231 inset, 0 0 0 5px black;
+transform: translate(-40px ,290px);
+   -webkit-box-reflect: right 323px;
+}
+.accessories{
+width: 150px;
+height: 10px;
+background-color: azure;
+border-radius:5px 50px 5px 50px;
+position: absolute;
+transform: translate(30px,200px);
+box-shadow:0 0 0 3px black ;
+box-shadow: 0 0 0 3px ,inset -110px 0px #353130 ,inset -150px 0 #e2873d, 0 0 0 12px #c7c7c7, 0 0 0 15px black;
+-webkit-box-reflect: right 140px; 
+ 
+}
+.accessories-2{
+position: absolute;
+width: 30px;
+height: 50px;
+ background-image:linear-gradient(to top,
+ #373232 10px,
+ #e6e6e6 10px 11px,
+ #373232 11px 17px,
+ #e6e6e6 17px 18px,
+ #373232 18px 23px,
+ #e6e6e6 23px 24px,
+ #373232 24px 31px,
+  #e6e6e6 31px 32px,
+  #373232 32px 37px
+ ); 
+transform: translateX(-12px) translateY(-10px);
+bottom: 0;left: 50%;
+border-radius:5px 5px 20px 20px  ;
+box-shadow: 0 0 0 4px #e6e6e6;
+}
+
+.circle-logo{
+position: absolute;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+background-color: #e6e6e6;
+left: 7.5px; top: -7px;
+box-shadow: 0 0 0 3px #373232, 0 -2px 0 2px #e6e6e6;
+} 
+.circle::after{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius:50% ;
+    background-color: #3732324b;
+z-index: -99;
+transform: rotateX(90deg);
+}
